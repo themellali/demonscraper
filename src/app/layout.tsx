@@ -27,7 +27,9 @@ export default function RootLayout({
     // suppressHydrationWarning should ideally be on the element where the mismatch occurs.
     // Browser extensions often add attributes to the body.
     <html lang="en">
-      <meta name="referrer" content="no-referrer-when-downgrade" />
+      <head>
+        <meta name="referrer" content="no-referrer-when-downgrade" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning={true}>
         {children}
         <Toaster />
