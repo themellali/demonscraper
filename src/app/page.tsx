@@ -66,6 +66,8 @@ function SubmitButton() {
 }
 
 
+
+
 export default function Home() {
   const [state, formAction] = useActionState(scrapeSubredditAction, initialState);
   const [showInitialMessage, setShowInitialMessage] = React.useState(true);
@@ -152,7 +154,7 @@ export default function Home() {
              aria-label="Advertisement Area 1"
            >
              <Image
-                src="https://www.imglnkx.com"
+                src="https://informalcelebration.com/bF3qVC0.P/3/pev-bGmDV_JVZuDe0/2MM/zrAezAMQjCg/1nLOTeYXzKMSDAMYyYOYDJYk"
                 alt="Advertisement Banner Area 1"
                 width={300}
                 height={100}
