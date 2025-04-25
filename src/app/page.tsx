@@ -93,6 +93,52 @@ export default function Home() {
     }
   }, [state.timestamp, state.images, state.error]);
 
+   // Effect to inject the ad script
+   React.useEffect(() => {
+    const scriptId = 'vebw-ad-script';
+    // Check if the script already exists
+    if (document.getElementById(scriptId)) {
+      return;
+    }
+
+    const script = document.createElement('script');
+    script.id = scriptId;
+    script.innerHTML = `
+      (function(vebw){
+        var d = document,
+            s = d.createElement('script'),
+            l = d.scripts[d.scripts.length - 1];
+        s.settings = vebw || {};
+        s.src = "//informalcelebration.com/cdD.9b6Tba2u5llySOWbQp9WNCj/MlwBMwzOI/4VN/Sy0I2DMKz-A/zGMIjSg_2v";
+        s.async = true;
+        s.referrerPolicy = 'no-referrer-when-downgrade';
+        if (l && l.parentNode) {
+             l.parentNode.insertBefore(s, l);
+        } else {
+             // Fallback if last script isn't found (less likely but safe)
+             d.head.appendChild(s);
+        }
+
+      })({})
+    `;
+    // Append the container script to the body or head
+    document.body.appendChild(script);
+
+    // Cleanup function to remove the script when the component unmounts
+    return () => {
+      const existingScript = document.getElementById(scriptId);
+      if (existingScript && existingScript.parentNode) {
+        existingScript.parentNode.removeChild(existingScript);
+      }
+      // Also attempt to remove the script loaded by the inline script
+      const externalScript = document.querySelector('script[src^="//informalcelebration.com/"]');
+      if (externalScript && externalScript.parentNode) {
+         externalScript.parentNode.removeChild(externalScript);
+      }
+    };
+  }, []); // Empty dependency array ensures this runs only once on mount
+
+
 
   return (
     <>
