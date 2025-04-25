@@ -152,7 +152,7 @@ export default function Home() {
              aria-label="Advertisement Area 1"
            >
              <Image
-                src="https://www.imglnkx.com/9659/DAT-460_DESIGN-23858_5_300100.gif"
+                src="https://www.imglnkx.com/"
                 alt="Advertisement Banner Area 1"
                 width={300}
                 height={100}
