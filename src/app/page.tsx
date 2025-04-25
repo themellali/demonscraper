@@ -152,7 +152,7 @@ export default function Home() {
              aria-label="Advertisement Area 1"
            >
              <Image
-                src="https://www.imglnkx.com/"
+                src="https://www.imglnkx.com"
                 alt="Advertisement Banner Area 1"
                 width={300}
                 height={100}
@@ -230,7 +230,7 @@ export default function Home() {
                style={{ maxHeight: 'calc(100vh - 10rem)' }} // Ensure it doesn't overflow viewport
              >
                <Image
-                  src="https://www.imglnkx.com/7930/010678A_CXHR_18_ALL_EN_121_L.gif"
+                  src="https://www.imglnkx.com"
                   alt="Advertisement Banner"
                   fill
                   style={{ objectFit: 'contain' }}
