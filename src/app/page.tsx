@@ -221,7 +221,9 @@ export default function Home() {
           </div>
         </div>
 
+        
         {/* Side Ad Placeholder */}
+        {/* 
         <aside className="hidden lg:flex lg:flex-col pt-20">
              <div
                id="ad-placeholder-side"
@@ -239,6 +241,7 @@ export default function Home() {
                 />
              </div>
         </aside>
+        */}
       </div>
     </main>
     </>
