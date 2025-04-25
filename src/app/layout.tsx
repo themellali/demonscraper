@@ -29,7 +29,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="referrer" content="no-referrer-when-downgrade" />
-        <meta name="b16aa8d572ab5890309afb9dfd2ad736f9cf7b3f" content="b16aa8d572ab5890309afb9dfd2ad736f9cf7b3f" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning={true}>
         {children}
