@@ -34,8 +34,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning={true}>
         {children}
         <Toaster />
-      </body>
-      <script>
+        <script>
 (function(meahf){
 var d = document,
     s = d.createElement('script'),
@@ -47,6 +46,7 @@ s.referrerPolicy = 'no-referrer-when-downgrade';
 l.parentNode.insertBefore(s, l);
 })({})
 </script>
+      </body>
     </html>
   );
 }
