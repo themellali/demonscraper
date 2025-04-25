@@ -123,19 +123,6 @@ export default function Home() {
     `;
     // Append the container script to the body or head
     document.body.appendChild(script);
-
-    // Cleanup function to remove the script when the component unmounts
-    return () => {
-      const existingScript = document.getElementById(scriptId);
-      if (existingScript && existingScript.parentNode) {
-        existingScript.parentNode.removeChild(existingScript);
-      }
-      // Also attempt to remove the script loaded by the inline script
-      const externalScript = document.querySelector('script[src^="//informalcelebration.com/"]');
-      if (externalScript && externalScript.parentNode) {
-         externalScript.parentNode.removeChild(externalScript);
-      }
-    };
   }, []); // Empty dependency array ensures this runs only once on mount
 
 
