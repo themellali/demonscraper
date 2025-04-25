@@ -129,7 +129,7 @@ export default function Home() {
 
   return (
     <>
-     <main className="container mx-auto flex min-h-screen flex-col justify-center items-center p-4 sm:p-8">
+     <main className="container mx-auto flex min-h-screen flex-col items-center p-4 sm:p-8">
       <div className="w-full grid grid-cols-1 lg:grid-cols-[1fr_200px] gap-8">
 
         {/* Central Content Area */}
