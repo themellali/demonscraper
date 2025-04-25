@@ -129,7 +129,7 @@ export default function Home() {
 
   return (
     <>
-     <main className="container mx-auto flex min-h-screen flex-col items-center p-4 sm:p-8">
+     <main className="container mx-auto flex min-h-screen flex-col justify-center items-center p-4 sm:p-8">
       <div className="w-full grid grid-cols-1 lg:grid-cols-[1fr_200px] gap-8">
 
         {/* Central Content Area */}
@@ -179,6 +179,7 @@ export default function Home() {
           </Card>
 
            {/* Ad Placeholder 1: Below Input Card */}
+           {/*
            <div
              id="ad-placeholder-top"
              className="w-full max-w-3xl h-auto mb-8 flex justify-center"
@@ -192,6 +193,7 @@ export default function Home() {
                 unoptimized
               />
            </div>
+            */}
 
 
           <div className="w-full max-w-6xl">
@@ -255,6 +257,7 @@ export default function Home() {
         </div>
 
         {/* Side Ad Placeholder */}
+        {/*
         <aside className="hidden lg:flex lg:flex-col pt-20">
              <div
                id="ad-placeholder-side"
@@ -272,6 +275,7 @@ export default function Home() {
                 />
              </div>
         </aside>
+         */}
       </div>
     </main>
     </>
